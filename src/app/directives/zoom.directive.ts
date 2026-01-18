@@ -8,6 +8,7 @@ import {
 
 @Directive({
   selector: '[appZoom]',
+  standalone: true,
 })
 export class ZoomDirective {
   @Input() scaleFactor: number = 1.1;

@@ -1,0 +1,5 @@
+<div class="w-full flex items-center justify-end">
+  <span class="mr-3">Displaying Items {{pageInfo.start}}-{{pageInfo.end}} of {{totalCount}}</span>
+  <button [class]="buttonStyle" (click)="handleButtonClick(paginationConstants.PAGE_LEFT_BUTTON)" [disabled]="pageNum === 1"><</button>
+  <button [class]="buttonStyle" (click)="handleButtonClick(paginationConstants.PAGE_RIGHT_BUTTON)" [disabled]="pageNum >= pageInfo.totalPages">></button>
+</div>

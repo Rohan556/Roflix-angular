@@ -21,7 +21,6 @@ export class AppComponent {
 
   get showHeader(): boolean {
     const url = this.router.url || '';
-    console.log(!url.startsWith('/login'));
     return !url.startsWith('/login');
   }
 }
